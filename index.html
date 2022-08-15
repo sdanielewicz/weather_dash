@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+	<link href="./assets/css/style.css" rel="stylesheet">
+
+	<title>Weather Dashboard</title>
+</head>
+
+<body>
+
+	<header>
+		<div class="row">
+			<div class="col-md-12 bored">
+				<h3>
+					Weather Dashboard
+				</h3>
+			</div>
+	</header>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-md-3 bored">
+				<div class="input-group">
+					<div class="form-outline">
+						<input type="search" id="search_term" class="form-control" />
+
+					</div>
+					<button type="button" class="btn btn-primary" id="search_btn">
+						<i class="fas fa-search"></i>
+						<i class="fas fa-thin"></i>
+					</button>
+				</div>
+
+				<ul>
+					<li>
+						<button type="button" class="btn btn-primary" id="city_btn1">
+							<h1 class="badge badge-primary" id="city1"></h1>
+						</button>
+					</li>
+					<li>
+						<button type="button" class="btn btn-primary" id="city_btn2">
+							<h1 class="badge badge-primary" id="city2"></h1>
+						</button>
+					</li>
+					<li>
+						<button type="button" class="btn btn-primary" id="city_btn3">
+							<h1 class="badge badge-primary" id="city3"></h1>
+						</button>
+					</li>
+					<li>
+						<button type="button" class="btn btn-primary" id="city_btn4">
+							<h1 class="badge badge-primary" id="city4"></h1>
+						</button>
+					</li>
+
+				</ul>
+
+
+			</div>
+			<div class="col-md-9 bored">
+				<div class="row">
+					<div class="col-md-12 bored">
+						<h1 id="cityNow">
+							<h3 id="dateNow">
+								Date
+							</h3>
+						</h1>
+						<ul>
+							<li id="tempNow">
+								temp
+							</li>
+							<li id="windNow">
+								wind
+							</li>
+							<li id="humidNow">
+								humid
+							</li>
+							<li id="uvNow">
+								uv
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 bored">
+						<h1 style="padding: 10px"> 5 Day Forecast</h1>
+
+						<div class="card" style="width: 10rem; display: inline-block;">
+							<h5 class="card-title" id="dateFor0"></h5>
+							<div class="card-body">
+								<ul>
+									<li id="tempFor0">
+									</li>
+									<li id="windFor0">
+									</li>
+									<li id="humidFor0">
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card" style="width: 10rem; display: inline-block;">
+							<h5 class="card-title" id="dateFor8"></h5>
+							<div class="card-body">
+								<ul>
+									<li id="tempFor8">
+									</li>
+									<li id="windFor8">
+									</li>
+									<li id="humidFor8">
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="card" style="width: 10rem; display: inline-block;">
+							<h5 class="card-title" id="dateFor16"></h5>
+							<div class="card-body">
+								<ul>
+									<li id="tempFor16">
+									</li>
+									<li id="windFor16">
+									</li>
+									<li id="humidFor16">
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="card" style="width: 10rem; display: inline-block;">
+							<h5 class="card-title" id="dateFor24"></h5>
+							<div class="card-body">
+								<ul>
+									<li id="tempFor24">
+									</li>
+									<li id="windFor24">
+									</li>
+									<li id="humidFor24">
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="card" style="width: 10rem; display: inline-block;">
+							<h5 class="card-title" id="dateFor32"></h5>
+							<div class="card-body">
+								<ul>
+									<li id="tempFor32">
+									</li>
+									<li id="windFor32">
+									</li>
+									<li id="humidFor32">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

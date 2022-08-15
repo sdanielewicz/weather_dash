@@ -104,10 +104,10 @@ function writeForecast() {
 
 }
 
-// event listener section 
+// event listener and local storage section 
 var count = 1;
 
-// save to local storage 
+// save to local storage and execute main funtions 
 search_btn.on("click", function () {
 
   var saveit = $('#search_term').val();
@@ -135,6 +135,7 @@ $('#city3').text(write3);
 var write4 = localStorage.getItem('4');
 $('#city4').text(write4);
 
+change value of city to be passed to 
 city_btn1.on("click", function () {
   city = write1;
   writeNow();

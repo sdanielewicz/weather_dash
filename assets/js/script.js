@@ -9,7 +9,7 @@ var city_btn4 = $("#city_btn4");
 // get weather data for right now and write it to the page 
 function writeNow() {
 
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&appid=" + APIkey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&appid=" + APIkey;
 
 
   fetch(queryURL, {
@@ -28,7 +28,7 @@ function writeNow() {
 
       var getIcon = data.weather[0].icon;
       var iconNow = new Image(getIcon);
-      iconNow.src = "http://openweathermap.org/img/wn/" + getIcon + "@2x.png";
+      iconNow.src = "https://openweathermap.org/img/wn/" + getIcon + "@2x.png";
       iconNow.width = 100;
 
       // seperate api call needed for uv data 
@@ -57,7 +57,7 @@ function writeNow() {
 
 // get 5 day forecast data and write it to the page 
 function writeForecast() {
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&appid=" + APIkey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial" + "&appid=" + APIkey;
   var cityID;
 
   fetch(queryURL, {
@@ -89,7 +89,7 @@ function writeForecast() {
 
             var getForIcon = data.list[i].weather[0].icon;
             var iconForNow = new Image(getForIcon);
-            iconForNow.src = "http://openweathermap.org/img/wn/" + getForIcon + "@2x.png";
+            iconForNow.src = "https://openweathermap.org/img/wn/" + getForIcon + "@2x.png";
             iconForNow.width = 100;
 
             // write to page using id name concatonated with current num value of i 

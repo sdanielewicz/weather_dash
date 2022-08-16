@@ -9,7 +9,7 @@ Link to the deployed application can be found [here](https://sdanielewicz.github
 
 ### Usage
 Navigte to the deployed project. In the the search bar type the city you want the current weather and 5 day forecast for. If you refresh the page or come back to it later, you'll find your recent searches were saved and you can click on them to load the weather again.
-![gif of site](./Assets/screen.png)
+![gif of site](./assets/screen.png)
 
 ### Features
 * Save recent searches in local storage
